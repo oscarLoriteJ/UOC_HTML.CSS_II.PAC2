@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
+  "name": "pac1-oscarlorite",
   "version": "3.5.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "PAC1 a partir del Boilerplate de l'assignatura Advanced HTML/CSS Tools UOC",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -24,17 +24,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/oscarLoriteJ/-UOC_HTML.CSS_II.PAC1.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Oscar Lorite",
+    "email": "olorite@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/oscarLoriteJ/-UOC_HTML.CSS_II.PAC1.git#readme"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/oscarLoriteJ/-UOC_HTML.CSS_II.PAC1.git#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "autoprefixer": "^10.4.8",
