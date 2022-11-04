@@ -68,4 +68,9 @@ Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-b
 Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
 
 ## URL name of site deployment
+
 https://olj-uoc-htmlcss-ii-m1.netlify.app/
+
+## Imatges utilitzades
+
+https://gcavocats.ca/en/jose-gravel/man-avatar-icon-flat-vector-19152370-2/

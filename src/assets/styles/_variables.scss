@@ -1,12 +1,32 @@
 @use "sass:color";
 
+$fonts-path: "../fonts/";
+
+@font-face {
+  font-family: "Dosis";
+  src: url("#{$fonts-path}Dosis-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "WendyOne";
+  src: url("#{$fonts-path}WendyOne-Regular.ttf");
+}
+
+$font-family-text: "Dosis";
+$font-family-titles: "WendyOne";
+
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$uoc-corporate: #be6b12;
+$uoc-masterbrand: #dfb589;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 40%);
+
+$uoc-link: color.scale($uoc-corporate, $lightness: 10%);
+$uoc-linkHover: color.scale($uoc-masterbrand, $lightness: 10%);
+
+$color-contrast-titols-contenidors: #733c00;
 
 $mqMinWidth: 420px;

@@ -1,9 +1,18 @@
 {
-    "extends": [
-        "stylelint-config-recommended-scss",
-        "stylelint-config-recess-order"
-    ],
-    "rules": {
-        "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
-    }
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "number-leading-zero": "always",
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "color-no-invalid-hex": true,
+    "no-irregular-whitespace": true,
+    "declaration-block-single-line-max-declarations": 1,
+    "number-max-precision": 2,
+    "alpha-value-notation": "number",
+    "string-quotes": "double"
+  }
 }
