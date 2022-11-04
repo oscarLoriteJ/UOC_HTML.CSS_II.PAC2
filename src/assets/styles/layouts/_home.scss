@@ -234,7 +234,7 @@ h3 {
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     padding: 0.9rem;
     border: 1px solid $uoc-bg;
 
@@ -264,8 +264,12 @@ h3 {
       }
     }
     &--contingut {
-      max-width: 60%;
+      max-width: none;
 
+      @media (min-width: $mqMinWidth) {
+        //desktop
+        max-width: 60%;
+      }
       p {
         font-size: 1.6rem;
         font-weight: bold;
