@@ -1,8 +1,8 @@
 {
-  "name": "pac1-oscarlorite",
+  "name": "pac2-oscarlorite",
   "version": "3.5.0",
   "private": true,
-  "description": "PAC1 a partir del Boilerplate de l'assignatura Advanced HTML/CSS Tools UOC",
+  "description": "PAC2 a partir del Boilerplate i de l'entrega de la PEC2 de l'assignatura Advanced HTML/CSS Tools UOC",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -52,6 +52,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
     "lorem-ipsum": "^2.0.8"
   }
 }
