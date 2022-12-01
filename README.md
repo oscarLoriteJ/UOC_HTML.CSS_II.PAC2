@@ -69,4 +69,4 @@ Are you using this Boilerplate for your projects or for educational purposes? I 
 
 ## URL name of site deployment
 
-https://pac1-olj-htmlcssii.netlify.app/
+https://pac2-olj-htmlcssii.netlify.app/
