@@ -1,3 +1,61 @@
+.card__noticia {
+  border: 0px;
+}
+
+.card__noticia--background {
+  background-color: $uoc-bg-black-50;
+  border-radius: 0px;
+}
+
 .article {
   display: block;
+}
+
+%subarticles_generic {
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (max-width: $mqMaxWidth) {
+    %subarticle_generic {
+      max-width: 100%;
+    }
+  }
+}
+.article__header {
+  @extend %subarticles_generic;
+}
+.article__enumeration {
+  @extend %subarticles_generic;
+  padding: 1em;
+  font-size: 1.1rem;
+  border-top: 1px solid $uoc-masterbrand;
+  border-bottom: 1px solid $uoc-masterbrand;
+}
+
+.article__highlight {
+  @extend %subarticles_generic;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.article__highlight--quote {
+  @extend %subarticles_generic;
+  padding: 0.5em;
+  font-size: 1.6em;
+}
+
+.article__imatge {
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+
+  @media (max-width: $mqMaxWidth) {
+    .article__imatge {
+      height: 200px;
+    }
+  }
+}
+
+.article__end {
+  @extend %subarticles_generic;
 }

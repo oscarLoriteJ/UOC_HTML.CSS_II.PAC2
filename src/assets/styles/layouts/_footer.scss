@@ -1,26 +1,10 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.8rem;
-  font-size: 0.9rem;
-  text-align: center;
+  background-color: $body-bg-white;
+  a {
+    text-decoration: none;
 
-  @media (min-width: $mqMinWidth) {
-    //desktop
-    flex-direction: row;
-    gap: 5rem;
-    margin: auto;
-    text-align: left;
-  }
-
-  span:first-child {
-    font-weight: bold;
-  }
-  span:last-child {
-    font-style: italic;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

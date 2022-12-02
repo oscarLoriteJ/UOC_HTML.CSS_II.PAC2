@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>PAC 2 - L'ullera de Bangkok : Noticies</title>
+    </head>
+    <body class="body">
+        <include src="./views/header.html"></include>
+        <main class="mb-5 pb-5">
+            <!--Imatge principal -->
+            <div class="card text-white card__noticia">
+                <picture>
+                    <source
+                        media="(max-width: 576px)"
+                        srcset="
+                            ./assets/images/noticia_bg.jpg?as=webp&width=576
+                        "
+                    />
+                    <img
+                        class="card-img"
+                        src="./assets/images/noticia_bg.jpg?as=webp&width=992"
+                        alt="Card image"
+                    />
+                </picture>
+                <div
+                    class="card-img-overlay d-flex flex-column justify-content-around align-items-center card__noticia--background"
+                >
+                    <h1 class="display-2">
+                        Èxit en l'últim concert a Barcelona
+                    </h1>
+                    <p
+                        class="card-text text-center"
+                        id="lorem-card-subtitle"
+                    ></p>
+                </div>
+            </div>
+
+            <div class="container mt-4 mb-5">
+                <article class="article">
+                    <section class="article__header">
+                        <h1 class="mb-5" id="lorem-title"></h1>
+                        <p id="lorem-paragraph1"></p>
+                    </section>
+
+                    <section class="article__enumeration">
+                        <ol>
+                            <li>
+                                <span class="font-weight-bold"
+                                    >Enumeration 1:</span
+                                >
+                                <p id="lorem-enum1"></p>
+                            </li>
+                            <li>
+                                <span class="font-weight-bold"
+                                    >Enumeration 2:</span
+                                >
+                                <p id="lorem-enum2"></p>
+                            </li>
+                            <li>
+                                <span class="font-weight-bold"
+                                    >Enumeration 3:</span
+                                >
+                                <p id="lorem-enum3"></p>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="d-flex article__highlight">
+                        <blockquote
+                            class="article__highlight--quote"
+                            id="lorem-bloquote"
+                            cite="http://www.google.com"
+                        ></blockquote>
+                        <span id="lorem-paragraph2"></span>
+                    </section>
+                    <picture>
+                        <source
+                            class="article__imatge"
+                            media="(max-width: 576px)"
+                            srcset="
+                                ./assets/images/noticia-banda.jpg?as=webp&width=576
+                            "
+                        />
+                        <img
+                            class="card-img article__imatge"
+                            src="./assets/images/noticia-banda.jpg?as=webp&width=992"
+                            alt="Card image"
+                        />
+                    </picture>
+                    <section class="mt-5 article__end">
+                        <p id="lorem-paragraph3"></p>
+                    </section>
+                </article>
+                <p></p>
+                <p></p>
+            </div>
+        </main>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <script type="module" src="./assets/scripts/lorem-article.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

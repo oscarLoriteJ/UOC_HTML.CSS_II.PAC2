@@ -2,30 +2,28 @@
  * Import dependencies from node_modules
  * see commented examples below
  */
-import { LoremIpsum } from "lorem-ipsum";
+import * as bootstrap from "bootstrap";
 /**
  * Write any other JavaScript below
  */
 +(function () {
+  bootstrap;
   const university = "UOC";
   console.log(`Hello, ${university}!`);
 
-  const lorem = new LoremIpsum({
-    sentencesPerParagraph: {
-      max: 8,
-      min: 4,
-    },
-    wordsPerSentence: {
-      max: 16,
-      min: 4,
-    },
-  });
+  const urlActual = new URL(location.href);
 
-  document.getElementById("lorem-title").innerHTML = lorem.generateWords(5);
-  document.getElementById("lorem-title-mesInfo").innerHTML =
-    lorem.generateWords(8);
-  document.getElementById("lorem-titol-contingut").innerHTML =
-    lorem.generateWords(4);
-  document.getElementById("lorem-contingut").innerHTML =
-    lorem.generateParagraphs(1);
+  let path = urlActual.pathname;
+
+  console.log(path);
+
+  if (path == "/index.html") {
+    document.getElementById("botoInici").classList.add("active");
+  } else if (path == "/membres.html") {
+    document.getElementById("botoMembres").classList.add("active");
+  } else if (path == "/noticies.html") {
+    document.getElementById("botoNoticies").classList.add("active");
+  } else if (path == "/contacte.html") {
+    document.getElementById("botoContacte").classList.add("active");
+  }
 })();

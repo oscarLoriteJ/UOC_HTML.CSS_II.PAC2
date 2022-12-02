@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>PAC 2 - L'urella de Bangkok : Contacte</title>
+    </head>
+    <body class="body">
+        <include src="./views/header.html"></include>
+
+        <main class="mt-5 mb-5">
+            <div class="container">
+                <h1 class="mb-5">Contacte</h1>
+                <!-- FORMULARI -->
+                <form
+                    name="contacte"
+                    method="POST"
+                    data-netlify="true"
+                    onsubmit="submit"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating mb-2">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nom"
+                                        name="nom"
+                                        placeholder="Escrigui el nom"
+                                        required
+                                    />
+                                    <label for="nom">Nom: </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating mb-2">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="cognoms"
+                                        name="cognoms"
+                                        placeholder="Escrigui els cognoms"
+                                        required
+                                    />
+                                    <label for="cognoms">Cognoms: </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-2">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Escrigui el correu electrònic"
+                                        required
+                                    />
+                                    <label for="email"
+                                        >Correu electrònic:
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-5">
+                                <div class="form-floating mb-2">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="assumpte"
+                                        name="assumpte"
+                                        placeholder="Escrigui l'assumpte "
+                                        required
+                                    />
+                                    <label for="assumpte">Assumpte: </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-2 mb-3">
+                                <div class="form-floating mb-2">
+                                    <textarea
+                                        id="comentari"
+                                        name="comentari"
+                                        class="form-control"
+                                        placeholder="Escrigui aquí el seu comentari"
+                                        required
+                                    ></textarea>
+                                    <label for="comentari">Comentari: </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button
+                                type="submit"
+                                class="btn btn-outline-primary btn-lg"
+                            >
+                                Enviar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- FI FORMULARI-->
+            </div>
+        </main>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>
