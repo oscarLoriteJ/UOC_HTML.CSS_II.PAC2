@@ -14,71 +14,39 @@
     </head>
     <body class="body">
         <include src="./views/header.html"></include>
-        <main>
-            <!--Dades Personals-->
-            <div class="dades-personals">
-                <div class="dades-personals__intro">
-                    <div class="dades-personals__intro--perfil">
-                        <picture>
-                            <source
-                                srcset="
-                                    ./assets/images/avatar.jpg?as=webp&width=120
-                                "
-                                type="image/webp"
-                            />
-                            <img
-                                src="./assets/images/logo.png?width=120"
-                                alt="Fotografia de perfil"
-                                class=""
-                            />
-                        </picture>
-                    </div>
-                    <div class="dades-personals__intro--nom">
-                        <h2>Óscar Lorite Jódar</h2>
-                    </div>
-                    <div class="dades-personals__intro--sobremi">
-                        <p>
-                            Amant de la tecnologia i del canvi que està suposant
-                            en tots els àmbits de la vida.<br />
-                            Per aquesta raó vaig estudiar Enginyeria
-                            Informàtica<br />
-                            Runner i swimmer per desconnectar i refrescar la
-                            ment.
-                        </p>
-                    </div>
+        <main class="">
+            <div class="gridhome">
+                <div class="gridhome__video">
+                    <video autoplay muted loop>
+                        <source
+                            src="./assets/videos/banda-video.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
                 </div>
-                <div class="dades-personals__separador"></div>
-                <div class="dades-personals__aficions">
-                    <div class="dades-personals__aficions--title">
-                        <h2><i class="fas fa-bullhorn"></i> Aficions</h2>
-                    </div>
-                    <ul class="dades-personals__aficions--list">
-                        <li>Running</li>
-                        <li>Fotografia</li>
-                        <li>Tecnologia</li>
-                        <li>Natació</li>
-                    </ul>
+                <div class="gridhome__title">
+                    <h1 class="display-2">LA BOCA DE BANGKOK</h1>
                 </div>
-                <div class="dades-personals__separador"></div>
-
-                <ul class="dades-personals__contacte">
-                    <li>
-                        <i class="far fa-address-card"></i> Carrer Montserrat,
-                        Num.1, 2n 2a, <br />
-                        43850 Cambrils (Tarragona)
-                    </li>
-                    <li><i class="fas fa-phone-alt"></i>+34 689 88 88 22</li>
-                    <li><i class="fas fa-at"></i> alumne@uoc.edu</li>
-                    <li>
-                        <i class="fab fa-linkedin"></i
-                        ><a
-                            href="https://www.linkedin.com/school/uoc/"
-                            target="”_blank”"
-                        >
-                            @alumne</a
-                        >
-                    </li>
-                </ul>
+                <div class="gridhome__text">
+                    Descobreix la nostra banda de música. <br />
+                    Vam néixer fa deu anys amb l'esperit de fer passar una bona
+                    estona a tots aquells que siguin amants del pop i pop-rock.
+                    <br />
+                    Estem desitjant veure't en un dels nostres concerts! Si vols
+                    que vinguem a la teva ciutat, contacta'ns. La major part de
+                    concerts que oferim són als Països Catalans.
+                </div>
+                <div class="gridhome__button">
+                    <a href="./contacte.html"
+                        ><button class="btn btn-lg btn-outline-info">
+                            CONTACTA'NS
+                        </button></a
+                    >
+                </div>
+                <div class="gridhome__shadow1">&nbsp;</div>
+                <div class="gridhome__shadow2">&nbsp;</div>
+                <div class="gridhome__shadow3">&nbsp;</div>
+                <div class="gridhome__shadow4">&nbsp;</div>
             </div>
         </main>
 

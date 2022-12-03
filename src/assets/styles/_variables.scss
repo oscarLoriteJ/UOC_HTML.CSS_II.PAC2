@@ -16,6 +16,7 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 
 $uoc-corporate: #00b4c6;
 $uoc-masterbrand: #002d32;
+$uoc-corporate-intermediate: #80dae3;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 20%);
 
 $body-bg-color: #f3f3f3;
@@ -25,6 +26,8 @@ $uoc-bg-black: #000000;
 $uoc-link: color.scale($uoc-corporate, $lightness: 10%);
 $uoc-linkHover: color.scale($uoc-masterbrand, $lightness: 10%);
 $uoc-bg-black-50: rgba(0, 0, 0, 0.55);
+$uoc-bg-white-50: rgba(255, 255, 255, 0.55);
+$uoc-bg-blue-60: rgba(0, 180, 198, 0.6);
 
 $color-contrast-titols-contenidors: #000000;
 
@@ -33,5 +36,6 @@ $mqMaxWidth: 576px;
 
 /* Bootstrap variables*/
 $theme-colors: (
-  "primary": #001619,
+  "primary": $uoc-masterbrand,
+  "info": $uoc-corporate-intermediate,
 );
