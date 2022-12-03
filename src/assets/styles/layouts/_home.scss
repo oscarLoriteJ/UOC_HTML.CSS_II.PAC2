@@ -91,13 +91,13 @@ h3 {
   .gridhome {
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 0.5fr 0.5fr 1fr 3fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 3fr 0.5fr;
     grid-template-columns: 0.5fr 2fr 1.5fr 1fr 0.5fr 2fr 0.5fr;
     grid-auto-flow: row;
     gap: 0px 0px;
     align-items: stretch;
     justify-items: stretch;
-    width: 100vw;
+    //width: 100vw;
     height: calc(100vh - 16px - 40px);
   }
   .gridhome__video {
@@ -162,7 +162,7 @@ h3 {
   @media (max-width: $mqMaxWidth) {
     .gridhome {
       display: grid;
-      grid-template-rows: 0.5fr 0.75fr 0.75fr 0.5fr 0.5fr 2fr 0.5fr 1fr;
+      grid-template-rows: 0.5fr 0.75fr 0.75fr 0.5fr 0.5fr 2.5fr 0.5fr;
       grid-template-columns: 0.5fr 3fr 3fr 0.5fr;
       grid-auto-flow: row;
       gap: 0px 0px;
